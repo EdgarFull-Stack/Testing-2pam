@@ -8,12 +8,21 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="form-container">
-      <h2>Enter Your Name</h2>
-      <input type="text" id="nameInput" placeholder="Your Name" required />
-      <button id="submitButton">Submit</button>
+    <h1>Users List</h1>
 
-      <div id="responseDiv" class="result"></div>
-    </div>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Add user</h2>
+    <form id="userForm">
+      <input type="text" id="firstName" placeholder="Name" required />
+      <button type="submit">Add</button>
+    </form>
   </body>
 </html>

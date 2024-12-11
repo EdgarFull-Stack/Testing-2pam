@@ -1,44 +1,55 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-.form-container {
-  background-color: white;
+#userTable,
+#userForm {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-input[type="text"] {
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table th,
+table td {
   padding: 10px;
-  margin: 10px 0;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table th {
+  background-color: #f4f4f4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  padding: 8px;
+  font-size: 14px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #4caf50;
+form button {
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
 }
-button:hover {
-  background-color: #45a049;
-}
-.result {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-  display: none;
+form button:hover {
+  background-color: #0056b3;
 }
